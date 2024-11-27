@@ -1,5 +1,5 @@
-
-USE TECHNOLOGY: HTML, CSS, JAVASCRIPT, BOOTSTRAP 
+# Expense Tracker Page
+# Use Tool: HTML, CSS, JAVASCRIPT, BOOTSTRAP 
 
 
 1. About:
