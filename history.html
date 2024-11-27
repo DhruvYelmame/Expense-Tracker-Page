@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Expenses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .expense-table {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: left;
+        }
+
+        tbody td {
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        .total-amount {
+            padding: 10px;
+            text-align: right;
+            background-color: #f2f2f2;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .navigation a {
+            text-decoration: none;
+            color: white;
+            background-color: #4caf50;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .navigation a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>View Expense History</h1>
+        <div class="expense-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense Name</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-list"></tbody>
+            </table>
+            <div class="total-amount">
+                <strong>Total:</strong>
+                Rs. <span id="total-amount">0</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Fetch stored expenses
+        const expenses = JSON.parse(localStorage.getItem("expenses")) || [];
+        const expenseList = document.getElementById("expense-list");
+        const totalAmountElement = document.getElementById("total-amount");
+
+        function renderExpenses() {
+            // Clear existing content
+            expenseList.innerHTML = "";
+            let totalAmount = 0;
+
+            // Populate the table
+            expenses.forEach(expense => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${expense.name}</td>
+                    <td>${expense.amount} Rs.</td>
+                `;
+                expenseList.appendChild(row);
+                totalAmount += expense.amount;
+            });
+
+            // Update total amount
+            totalAmountElement.textContent = totalAmount.toFixed(10);
+        }
+
+        // Render expenses on page load
+        renderExpenses();
+    </script>
+
+<div class="navigation">
+    <a href="index.html">Back to Home</a>
+</div>
+
+</body>
+</html>
