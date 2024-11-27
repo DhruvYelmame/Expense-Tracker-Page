@@ -1,5 +1,3 @@
-                                                            Expense Tracker Page
-
 
 USE TECHNOLOGY: HTML, CSS, JAVASCRIPT, BOOTSTRAP 
 
