@@ -1,3 +1,9 @@
+                                                            Expense Tracker Page
+
+
+USE TECHNOLOGY: HTML, CSS, JAVASCRIPT, BOOTSTRAP 
+
+
 1. About:
 Likely provides details about the purpose and features of the Expense Tracker. It may explain how the application helps users manage their finances efficiently.
 
