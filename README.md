@@ -2,35 +2,32 @@
 # Use Tool: HTML, CSS, JAVASCRIPT, BOOTSTRAP 
 
 
-1. About:
+# 1. About:
 Likely provides details about the purpose and features of the Expense Tracker. It may explain how the application helps users manage their finances efficiently.
 
-2. Add Expense:
+
+# 2. Add Expense:
 This module likely allows users to input details about their expenses. It may include fields such as:
+a) Category name (e.g., food, transport, utilities)
+b) Amount
 
-1)Category name (e.g., food, transport, utilities)
-2)Amount
 
-
-3. History:
+# 3. History:
 Displays a log of all previously added expenses.
+a)A table or list format with columns for expense name & amount.
+b)Options to sort or filter the data
 
-1)A table or list format with columns for expense name & amount.
-2)Options to sort or filter the data
 
-
-4. Learn:
+# 4. Learn:
 This section might provide educational content or tips on financial management. It could include:
+a)Budgeting guides
+b)Tutorials on using the application effectively
 
-1)Budgeting guides
-2)Tutorials on using the application effectively
 
-
-5. Contact Us:
+# 5. Contact Us:
 Likely contains contact information or a form for users to get in touch with the developers or support team. This might include:
-
-1)Email address
-2)phone number
+a)Email address
+b)phone number
 
 
 
