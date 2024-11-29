@@ -38,7 +38,8 @@ Likely contains contact information or a form for users to get in touch with the
 
 
 # SCREENSHOT 1
-![Screenshot 2024-11-27 215300](https://github.com/user-attachments/assets/4b829f93-1f78-4a55-b863-d9c6486f2c05)
+![Screenshot 2024-11-27 215114](https://github.com/user-attachments/assets/f2b76c5d-a86b-426b-b7c2-3f65e33fbe8d)
+
 
 
 # SCREENSHOT 2
@@ -54,4 +55,4 @@ Likely contains contact information or a form for users to get in touch with the
 
 
 # SCREENSHOT 5 
-![Screenshot 2024-11-27 215114](https://github.com/user-attachments/assets/f2b76c5d-a86b-426b-b7c2-3f65e33fbe8d)
+![Screenshot 2024-11-27 215300](https://github.com/user-attachments/assets/4b829f93-1f78-4a55-b863-d9c6486f2c05)
